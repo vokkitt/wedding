@@ -1,0 +1,1 @@
+Đặt file MP3 bạn có quyền sử dụng tại `public/music/young-and-beautiful.mp3`, hoặc đổi `musicUrl` trong `src/data/weddingData.ts` theo tên file. Nhạc chỉ phát sau khi khách chủ động chạm nút âm thanh; MP3 chưa được gửi kèm nên hiện chưa có âm thanh để phát.

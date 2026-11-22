@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <rect width="240" height="240" fill="#fff"/>
+  <rect x="12" y="12" width="216" height="216" fill="none" stroke="#b99a65" stroke-width="1"/>
+  <path d="M40 40h48v48H40zM152 40h48v48h-48zM40 152h48v48H40z" fill="none" stroke="#46382f" stroke-width="8"/>
+  <path d="M56 56h16v16H56zM168 56h16v16h-16zM56 168h16v16H56z" fill="#46382f"/>
+  <text x="120" y="120" text-anchor="middle" fill="#b99a65" font-family="Georgia,serif" font-size="14">THAY QR THẬT</text>
+  <text x="120" y="215" text-anchor="middle" fill="#46382f" font-family="Arial,sans-serif" font-size="8">MẪU · KHÔNG DÙNG ĐỂ CHUYỂN KHOẢN</text>
+</svg>

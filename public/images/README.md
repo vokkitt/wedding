@@ -1,0 +1,1 @@
+Ảnh cưới thực tế được giữ nguyên trong thư mục này. Ảnh bìa và ảnh kết thúc được cấu hình tại `src/data/weddingData.ts`; danh sách gallery được quản lý trong `src/data/gallery.ts`. Không cần đổi tên ảnh gốc khi cập nhật website.
