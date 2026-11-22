@@ -10,7 +10,7 @@ export default function Envelope({ onOpen }: EnvelopeProps) {
   const openInvitation = () => {
     if (opening) return
     setOpening(true)
-    window.setTimeout(onOpen, 1450)
+    onOpen()
   }
 
   return (

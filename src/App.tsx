@@ -22,6 +22,7 @@ export default function App() {
     audio.current = new Audio(weddingData.musicUrl)
     audio.current.loop = true
     audio.current.volume = 0.35
+    audio.current.preload = 'auto'
     return () => { audio.current?.pause(); audio.current = null }
   }, [])
 
@@ -49,6 +50,15 @@ export default function App() {
     }
   }, [])
 
+  const openInvitation = useCallback(() => {
+    if (audio.current) {
+      void audio.current.play()
+        .then(() => setSoundOn(true))
+        .catch(() => setSoundOn(false))
+    }
+    window.setTimeout(() => setOpened(true), 1450)
+  }, [])
+
   const moveLightbox = useCallback((direction: number) => {
     setLightbox((current) => {
       if (!current) return current
@@ -63,7 +73,7 @@ export default function App() {
   }
 
   return <>
-    {!opened && <Envelope onOpen={() => setOpened(true)} />}
+    {!opened && <Envelope onOpen={openInvitation} />}
     {opened && <div className="invitation-site">
       <NavigationBar onSoundToggle={toggleSound} soundOn={soundOn} />
       <main>
